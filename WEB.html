@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Sign-Up</title>
+   
+    <link rel="icon" href="gold-logo-with-title-ai_811396-1666.jpg">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>ALAIN WEB</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <style>
+            /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Styling */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Form Section Styling */
+form {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 1rem;
+}
+
+form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+button{
+    width: 180px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Media Section Styling */
+.media-container {
+    margin: 20px 0;
+}
+
+.media-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+        </style>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section of the website. You can add content here.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Section</h2>
+            <p>Learn more about us in this section. Add information about your site or business here.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Services Section</h2>
+            <p>Details about the services you offer can go here.</p>
+        </section>
+
+        <!-- Sign-Up Section -->
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media">
+            <h2>Image and Video Section</h2>
+
+            <!-- Image -->
+            <div class="media-container">
+                <h3>Our Team</h3>
+                <img src="gold-logo-with-title-ai_811396-1666.jpg" alt="Our team" class="media-image">
+            </div>
+
+            <!-- Video -->
+            <div class="media-container">
+                <h3>Watch Our Intro Video</h3>
+                <iframe width="560" height="315" src="Victony & Tempoe - Soweto (Official Video).mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>Provide contact information or a contact form in this section.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024-2030 My Website.ALAIN art.</p>
+        </div>
+    </footer>
+</body>
+</html>

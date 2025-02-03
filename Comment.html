@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Background</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .form-container {
+            width: 50%;
+            margin: 100px auto;
+            padding: 30px;
+            background: url('https://via.placeholder.com/1200x800') no-repeat center center;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea, select, button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+        <label for="Your Name"Your Name></label>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="password" name="password" placeholder="Your Password" required>
+        
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        
+        <label for="country">Select Your Country:</label>
+        <select name="country" id="country" required>
+            <option value="">--Select--</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+        </select>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
