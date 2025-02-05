@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Bar Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.loading-bar-container {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loading-bar {
+    height: 20px;
+    width: 0;
+    background-color: #4CAF50;
+}
+
+    </style>
+<body>
+    <div class="loading-bar-container">
+        <div class="loading-bar" id="loadingBar"></div>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    let loadingBar = document.getElementById('loadingBar');
+    let width = 0;
+
+    function increaseWidth() {
+        if (width >= 100) {
+            clearInterval(interval);
+        } else {
+            width++;
+            loadingBar.style.width = width + '%';
+        }
+    }
+
+    let interval = setInterval(increaseWidth, 30); // Adjust speed here
+});
+
+        </script>
+</body>
+</html>
