@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Button Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+</style>
+<body>
+    <h1>Click the Button Game</h1>
+    <p>Your score: <span id="score">0</span></p>
+    <button onclick="increaseScore()">Click me!</button>
+    <script src="scripts.js"></script>
+    <script>
+      let score = 0;
+
+function increaseScore() {
+    score += 1;
+    document.getElementById('score').textContent = score;
+}
+
+    </script>
+</body>
+</html>
